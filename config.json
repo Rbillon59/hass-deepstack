@@ -1,0 +1,44 @@
+{
+  "name": "Hass deepstack",
+  "version": "0.0.1",
+  "slug": "hass-deepstack",
+  "description": "Self host your deepstack instance in home assistant",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "icon": "ico.png",
+  "logo": "ico.png",
+  "map": ["ssl"],
+  "apparmor": true,
+  "ports": {
+    "5000/tcp": 5000,
+    "443/tcp": 4430
+  },
+  "ports_description": {
+    "5000/tcp": "Deepstack HTTP API"
+  },
+  "options": {
+    "auth": false,
+    "api_key": "",
+    "protocol": "http",
+    "cert_file": "cert.pem",
+    "key_file": "key.pem",
+    "face_detection_enabled": true,
+    "object_detection_enabled": true,
+    "image_enhance_enabled": false,
+    "scene_detection_enabled": false,
+    "threadcount": 4
+  },
+  "schema": {
+    "auth": "bool",
+    "protocol": "str",
+    "cert_file": "str?",
+    "key_file": "str?",
+    "api_key": "str?",
+    "face_detection_enabled": "bool",
+    "object_detection_enabled": "bool",
+    "image_enhance_enabled": "bool",
+    "scene_detection_enabled": "bool",
+    "threadcount": "int"
+  }
+}

@@ -9,6 +9,8 @@ DeepStack is an AI server that empowers every developer in the world to easily b
 
 Follow these steps to get the add-on installed on your system:
 
+:warning: Important : Make sure you've added my addon repository to your home-assistant addon library : https://github.com/Rbillon59/home-assistant-addons
+
 1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.
 2. Find the "hass-deepstack" add-on and click it.
 3. Click on the "INSTALL" button.

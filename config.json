@@ -1,9 +1,9 @@
 {
   "name": "Hass deepstack",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "slug": "hass-deepstack",
   "description": "Self host your deepstack instance in home assistant",
-  "arch": ["amd64"],
+  "arch": ["amd64", "aarch64"],
   "startup": "application",
   "boot": "auto",
   "icon": "ico.png",
